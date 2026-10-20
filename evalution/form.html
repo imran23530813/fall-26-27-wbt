@@ -3,18 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
     <title>Donor information</title>
 </head>
 
 <body>
     <fieldset>
-        <h2>Donor Information</h2>
+        <h1>Donor Information</h1>
         <table>
             <!-- First name -->
             <tr>
                 <td> <label for="fname">First Name:</label></td>
-                <td><input type="text" name="fname" required></td>
+                <td><input type="text" id="fname" name="fname" required></td>
 
             </tr>
 
@@ -22,7 +22,7 @@
 
             <tr>
                 <td> <label for="Lname">Last Name:</label></td>
-                <td><input type="text" name="Lname" required></td>
+                <td><input type="text" id="Lname" name="Lname" required></td>
 
             </tr>
 
@@ -30,7 +30,7 @@
 
             <tr>
                 <td> <label for="com">Company:</label></td>
-                <td><input type="text" name="com" required></td>
+                <td><input type="text" id="com" name="com"></td>
 
             </tr>
 
@@ -38,7 +38,7 @@
 
             <tr>
                 <td> <label for="address">Address 1:</label></td>
-                <td><input type="text" name="address" required></td>
+                <td><input type="text" id="address" name="address" required></td>
 
             </tr>
 
@@ -46,7 +46,7 @@
 
             <tr>
                 <td> <label for="address2">Address 2:</label></td>
-                <td><input type="text" name="address2" required></td>
+                <td><input type="text" id="address2" name="address2"></td>
 
             </tr>
 
@@ -54,7 +54,7 @@
 
             <tr>
                 <td> <label for="city">City:</label></td>
-                <td><input type="text" name="city" required></td>
+                <td><input type="text" id="city" name="city" required></td>
 
             </tr>
 
@@ -79,7 +79,7 @@
 
             <tr>
                 <td> <label for="Zip">Zip Code:</label></td>
-                <td><input type="number" name="Zip" required></td>
+                <td><input type="text" id="Zip" name="Zip" required></td>
 
             </tr>
 
@@ -91,9 +91,9 @@
             <tr>
                 <td><label for="country">Country:</label></td>
                 <td>
-                    <select id="country" name="State">
+                    <select id="country" name="country">
 
-                        <option>Select a State</option>
+                        <option>Select a Country</option>
                         <option>UK</option>
                         <option>CANADA</option>
                         <option>ARGENTINA</option>
@@ -107,7 +107,7 @@
 
             <tr>
                 <td> <label for="phone">Phone:</label></td>
-                <td><input type="tel" name="phone" required></td>
+                <td><input type="tel" id="phone" name="phone"></td>
 
             </tr>
 
@@ -116,7 +116,7 @@
 
             <tr>
                 <td> <label for="fax">Fax:</label></td>
-                <td><input type="tel" name="fax" required></td>
+                <td><input type="tel" id="fax" name="fax"></td>
 
             </tr>
 
@@ -125,7 +125,7 @@
 
             <tr>
                 <td> <label for="mail">Email:</label></td>
-                <td><input type="text" name="mail" required></td>
+                <td><input type="email" id="mail" name="mail" required></td>
 
             </tr>
 
@@ -146,7 +146,7 @@
                     <input type="radio" name="Amount" value="$75"> $75
                     <input type="radio" name="Amount" value="$100"> $100
                     <input type="radio" name="Amount" value="$250"> $250
-                    <input type="radio" value="Others"> $Others
+                    <input type="radio" name="Amount" value="Other"> Other
 
 
                 </td>
@@ -156,7 +156,7 @@
             <tr>
                 <td></td>
                 <td> <label for="amount">Others Amount $:</label>
-                    <input type="number" name="amount" required>
+                    <input type="number" id="amount" name="amount">
                 </td>
 
             </tr>
@@ -183,10 +183,10 @@
             <tr>
                 <td></td>
                 <td> <label for="credit">Monthly Credit Card $:</label>
-                    <input type="number" name="credit" required>
+                    <input type="number" id="credit" name="credit">
 
                     <label for="For"> For:</label>
-                    <input type="number" name="month" required>
+                    <input type="number" id="month" name="month">
                     <label for="Month"> Month</label>
 
 
@@ -211,8 +211,11 @@
 
                 <td>
 
-                    <input type="checkbox" value="honor"> To Honor<br>
-                    <input type="checkbox" value="memory"> In Memory of
+
+                    <input type="radio" name="donationType" value="honor">
+                    <label for="honor">To Honor</label><br>
+                    <input type="radio" name="donationType" value="memory">
+                    <label for="memory">In Memory of</label>
 
 
 
@@ -233,7 +236,7 @@
             <!-- Donation to-->
             <tr>
                 <td> <label for="Donation">Acknowledge Donation To:</label></td>
-                <td><input type="text" name="Donation" required></td>
+                <td><input type="text" id="Donation" name="Donation"></td>
 
             </tr>
 
@@ -247,7 +250,7 @@
             <!-- Donation to-->
             <tr>
                 <td> <label for="cityy"> City:</label></td>
-                <td><input type="text" name="cityy" required></td>
+                <td><input type="text" id="cityy" name="cityy"></td>
 
             </tr>
 
@@ -289,6 +292,8 @@
 
 
         </table>
+
+
 
     </fieldset>
 
